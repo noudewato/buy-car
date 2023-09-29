@@ -1,0 +1,103 @@
+.Navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  box-shadow: 0px 4px 8px rgb(237, 237, 237);
+}
+.Navbar .logoDiv .logoLink {
+  display: flex;
+  align-items: center;
+}
+.Navbar .logoDiv .logoLink .logoIcon {
+  font-size: 40px;
+  color: rgb(38, 38, 221);
+  margin-right: 5px;
+}
+.Navbar .logoDiv .logoLink .logoTitle {
+  font-size: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  color: black;
+}
+.Navbar .navIcons {
+  display: flex;
+  align-items: center;
+}
+.Navbar .navIcons .profileIcon,
+.Navbar .navIcons .switchIcon {
+  font-size: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0px 4px 8px rgb(195, 191, 191);
+  margin-left: 15px;
+  cursor: pointer;
+}
+.Navbar .navIcons .openDiv {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .Navbar .nav {
+    position: absolute;
+    top: 100rem;
+    background-color: rgb(70, 70, 233);
+    width: 80%;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 2rem;
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 8px rgb(195, 191, 191);
+  }
+  .Navbar .nav .navMenu {
+    display: flex;
+    flex-direction: column;
+  }
+  .Navbar .nav .navMenu .closeMenu {
+    font-size: 30px;
+    margin: 1rem;
+    color: black;
+  }
+  .Navbar .nav .navMenu .closeMenu:hover {
+    color: red;
+  }
+  .Navbar .nav .navMenu .listItem {
+    padding: 10px 18px;
+    border-radius: 10px;
+  }
+  .Navbar .nav .navMenu .listItem:hover {
+    background-color: red;
+    color: white;
+    transition: 0.3s ease-in-out;
+  }
+  .Navbar .nav .navMenu .itemLink {
+    color: white;
+    font-size: 17px;
+  }
+  .Navbar .nav .navMenu .itemLink:hover {
+    color: white;
+  }
+}
+.Navbar .navMenu {
+  display: flex;
+  align-items: center;
+}
+.Navbar .navMenu .listItem {
+  padding: 10px 15px;
+  font-size: 18px;
+}
+.Navbar .navMenu .itemLink {
+  color: black;
+  padding: 5px 0;
+}
+.Navbar .navMenu .itemLink:hover {
+  border-bottom: 1px solid rgb(68, 68, 224);
+}
+.Navbar .navMenu .closeMenu {
+  display: none;
+}/*# sourceMappingURL=navbar.css.map */

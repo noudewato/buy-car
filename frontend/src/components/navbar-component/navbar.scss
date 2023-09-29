@@ -1,0 +1,155 @@
+.Navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  box-shadow: 0px 4px 8px rgb(237, 237, 237);
+
+  .logoDiv {
+    .logoLink {
+      display: flex;
+      align-items: center;
+      .logoIcon {
+        font-size: 40px;
+        color: rgb(38, 38, 221);
+        margin-right: 5px;
+      }
+
+      .logoTitle {
+        font-size: 25px;
+        font-weight: 500;
+        cursor: pointer;
+        color: black;
+      }
+    }
+  }
+
+  .navIcons {
+    display: flex;
+    align-items: center;
+
+    .profileIcon,
+    .switchIcon,
+    .openIcon {
+      font-size: 30px;
+      border: 1px solid black;
+      border-radius: 50%;
+      padding: 5px;
+      box-shadow: 0px 4px 8px rgb(195, 191, 191);
+      margin-left: 15px;
+      cursor: pointer;
+    }
+  }
+
+  .openIcon {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .openIcon {
+      display: block;
+    }
+
+    .nav {
+      position: absolute;
+      top: -100rem;
+      background-color: rgb(70, 70, 233);
+      width: 80%;
+      right: 50%;
+      left: 50%;
+      transform: translate(-50%);
+      padding: 2rem;
+      color: white;
+      border-radius: 1rem;
+      box-shadow: 0px 4px 8px rgb(195, 191, 191);
+
+      .navMenu {
+        .closeMenu {
+          font-size: 30px;
+          margin: 1rem;
+          color: black;
+          display: block;
+
+          &:hover {
+            color: red;
+          }
+        }
+
+        display: flex;
+        flex-direction: column;
+
+        .listItem {
+          padding: 10px 18px;
+          border-radius: 10px;
+          &:hover {
+            background-color: red;
+            color: white;
+            transition: 0.3s ease-in-out;
+          }
+        }
+
+        .itemLink {
+          color: white;
+          font-size: 17px;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .navMenu {
+    display: flex;
+    align-items: center;
+
+    .listItem {
+      padding: 10px 15px;
+      font-size: 18px;
+    }
+
+    .itemLink {
+      color: black;
+      padding: 5px 0.5rem;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        bottom: -4px;
+        background-color: rgb(0, 94, 255);
+        left: 0;
+        width: 0;
+        transition: 0.5s;
+      }
+      &:hover::after {
+        width: 100%;
+        background-color: rgb(0, 94, 255);
+      }
+    }
+
+    .closeMenu {
+      display: none;
+    }
+  }
+
+  .showNav {
+    top: 7rem;
+    transition: 0.6s ease-in-out;
+  }
+}
+
+.addbg {
+  background-color: rgba(248, 248, 255, 0.897);
+  box-shadow: none;
+}
+
+.listItem .active {
+  width: 100%;
+  border-bottom: 3px solid rgb(0, 94, 255);
+}

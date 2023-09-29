@@ -1,0 +1,102 @@
+.HomeContainer {
+  .secContainer {
+    padding: 7rem 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    .homeText {
+      width: 50%;
+      margin-left: 3rem;
+
+      .homeTitle {
+        font-size: 50px;
+        padding: 2rem 0 1rem;
+        text-transform: capitalize;
+
+        .homeTitlePart {
+          color: rgb(80, 80, 222);
+        }
+      }
+
+      .homeParagraph {
+        text-transform: capitalize;
+        font-size: 19px;
+        letter-spacing: 3px;
+        color: rgba(164, 149, 149, 0.852);
+      }
+
+      .homeButton {
+        padding: 2rem 0;
+        .btn-buy,
+        .btn-rent {
+          margin-right: 10px;
+          cursor: pointer;
+        }
+
+        .btn-buy {
+          background-color: rgb(80, 80, 222);
+          color: white;
+          transition: 0.3s ease-in-out;
+          border: 1px solid rgb(80, 80, 222);
+
+          &:hover {
+            background-color: white;
+            color: rgb(80, 80, 222);
+            transition: 0.3s ease-in-out;
+            border: 1px solid rgb(80, 80, 222);
+          }
+        }
+
+        .btn-rent {
+          background-color: white;
+          color: rgb(80, 80, 222);
+          transition: 0.3s ease-in-out;
+          border: 1px solid rgb(80, 80, 222);
+
+          &:hover {
+            background-color: rgb(80, 80, 222);
+            color: white;
+            transition: 0.3s ease-in-out;
+            border: 1px solid rgb(80, 80, 222);
+          }
+        }
+      }
+    }
+
+    .homeImageDiv {
+      width: 50%;
+
+      .homeImage {
+        width: 100%;
+        margin-top: 6rem;
+        height: 300px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .secContainer {
+      display: flex;
+      flex-direction: column;
+
+      .homeText{
+        margin-left: 0;
+      }
+
+      .homeText,
+      .homeImageDiv {
+        width: 100%;
+      }
+
+      .homeImageDiv {
+        .homeImage {
+          width: 100%;
+          margin-top: 0;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

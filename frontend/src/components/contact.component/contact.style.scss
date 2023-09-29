@@ -1,0 +1,48 @@
+.ContactComponent {
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  background-color: rgba(248, 248, 255, 0.897);
+
+  .address{
+   margin: 0 2rem;
+  }
+
+  @media screen and (max-width:991px) {
+    .address{
+        margin: 0;
+    }
+  }
+
+  .address__content {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 1rem;
+
+    .address__box {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 1rem 0;
+    }
+
+    .i {
+      font-size: 4rem;
+      margin-right: 1rem;
+    }
+
+    .mail{
+        color: red;
+    }
+
+    .phone{
+color: green;
+    }
+
+    p,
+    .number {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+  }
+}

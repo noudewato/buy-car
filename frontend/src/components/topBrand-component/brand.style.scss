@@ -1,0 +1,68 @@
+.Brand {
+  padding: 1rem 2rem;
+  background-color: whitesmoke;
+
+  .brandHeader {
+    padding: 0 2rem;
+    h2 {
+      padding: 1.5rem 0;
+    }
+
+    p {
+      text-transform: capitalize;
+      font-size: 19px;
+      letter-spacing: 3px;
+      color: rgba(164, 149, 149, 0.852);
+    }
+  }
+
+  .brandCenter{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, auto));
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 2rem;
+
+    .brandBox{
+        display: flex;
+        align-items: center;
+         background-color: rgba(237, 237, 237);
+         transition: .4s ease-in-out;
+         border-radius: 5px;
+         cursor: pointer;
+
+         &:hover{
+            background-color: rgba(237, 237, 237);
+            padding: .5rem ;
+         }
+
+        img{
+            width: 70px;
+            height: 70px;
+        }
+
+        .brandInfo{
+
+           padding: 10px 0 10px 5px;
+
+
+            p{
+                font-size: 16px;
+                padding: 5px 0;
+            }
+
+           
+        }
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    .brandHeader{
+        padding: 0;
+    }
+
+    .brandCenter{
+        margin: 2rem 0;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.AuctionDiv {
+  padding: 1.5rem 2rem;
+  .AuctionText {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 2rem;
+
+    .AuctionIcons {
+      .AuctionIconLeft,
+      .AuctionIconRight {
+        font-size: 20px;
+        margin-right: 7px;
+        border-radius: 5px;
+        background-color: rgb(100, 100, 215);
+        color: white;
+        padding: 3px 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: white;
+          transition: 0.3s ease-in-out;
+          color: rgb(52, 52, 211);
+          border: 1px solid rgb(52, 52, 211);
+        }
+      }
+    }
+  }
+
+  .AuctionContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .AuctionText {
+      margin: 0;
+    }
+
+    .AuctionContainer {
+    
+    margin: 2rem 0 0 0 ;
+  }
+  }
+}
