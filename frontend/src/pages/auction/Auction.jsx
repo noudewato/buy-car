@@ -49,7 +49,7 @@ const Auction = () => {
       name: "Mercedes-Benz G",
       year: "2004",
       sellingPrice: 50000,
-      image: `https://copart-images.inloher.com/v1/AUTH_svc.pdoc00001/lpp/0823/e5b5f355c59f47a881d961f5d111d69d_hrs.jpg`,
+      image: `https://th.bing.com/th/id/R.5bab2cab07a4fb0da4c7a466de6e6899?rik=zXHBkiPbcgSxvQ&riu=http%3a%2f%2fwww.forcegt.com%2fwp-content%2fuploads%2f2017%2f09%2f2017-mercedes-benz-g-class-professional-wagon-front-quarter.jpg&ehk=U6lVJtKlf52T%2fYbwLaPCEhAECkXnOzLpN49x5Dto%2b9s%3d&risl=&pid=ImgRaw&r=0`,
       miles: 198000,
       option: "Buy now",
       condition: "Home Used",
